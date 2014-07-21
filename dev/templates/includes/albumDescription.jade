@@ -1,8 +1,8 @@
 section
 	div.description
-		h2 Album
-		h3 Artist
-		p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eligendi, mollitia recusandae, adipisci, architecto tempora voluptatum magni.
+		h2 {{albumCtrlr.music[albumCtrlr.selected].album}}
+		h3 {{albumCtrlr.music[albumCtrlr.selected].artist}}
+		p  {{albumCtrlr.music[albumCtrlr.selected].description}}
 	div.controls
 		button#preview &#9658;
 		button#buy Buy
