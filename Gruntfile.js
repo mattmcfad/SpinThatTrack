@@ -92,7 +92,7 @@ module.exports = function(grunt) {
 		watch: {
 			css: {//task
 			    files: 'dev/styles/*.styl', //where to watch
-			    tasks: ['sass','autoprefixer'], 
+			    tasks: ['stylus','autoprefixer'], 
 			    options: {
 			      livereload: true
 			    }
