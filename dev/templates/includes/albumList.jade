@@ -1,5 +1,5 @@
 nav
-	ul
-		li(ng-repeat="music in albumCtrlr.music")
+	ul.list
+		li.listItem(ng-repeat="music in albumCtrlr.music")
 			a(href="#" ng-click="albumCtrlr.setSelected($index)")
 				img(ng-src="{{music.imageUrlSmall}}")

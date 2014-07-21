@@ -10,10 +10,7 @@
 			};
 
 			this.music = music;
-
 		});
-
-
 
 		/*JSON Structure
 		 *id

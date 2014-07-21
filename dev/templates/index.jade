@@ -3,11 +3,11 @@ html(lang='en' ng-app="gallery")
 	head
 		include includes/header
 	body
-		.wrapper
-			.container.clearfix(ng-controller="AlbumController as albumCtrlr")
-				header 
-					h1 Spin That Track!
-					div.shoppingCart
+		.wrapper(ng-controller="AlbumController as albumCtrlr")
+			header 
+				h1 Spin That Track!
+				div.shoppingCart
+			.container.clearfix
 				include includes/albumList
 				include includes/albumArt
-				include includes/albumDescription
+			include includes/albumDescription
