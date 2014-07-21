@@ -1,9 +1,23 @@
 (function() {
 	var app = angular.module('gallery',[]);
-		app.controller('musicController',function(){
-			this.selected = 1; // which album is selected
+		
+		app.controller('AlbumController',function(){
+			// Which album is selected and being displayed
+			this.selected = 0; 
+			
+			this.setSelected = function(newSelection){
+				this.selected = newSelection;
+			};
+
+			this.isSelected = function(selected){
+				return this.selected === selected;
+			};
+
 			this.music = music;
+
 		});
+
+
 
 		/*JSON Structure
 		 *id

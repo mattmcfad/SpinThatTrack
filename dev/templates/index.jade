@@ -4,10 +4,10 @@ html(lang='en' ng-app="gallery")
 		include includes/header
 	body
 		.wrapper
-			.container.clearfix(ng-controller="musicController as musicCtrlr")
+			.container.clearfix(ng-controller="AlbumController as albumCtrlr")
 				header 
 					h1 Spin That Track!
-					div.shoppingCart {{musicCtrlr.music[0].artist}}
+					div.shoppingCart
 				include includes/albumList
 				include includes/albumArt
 				include includes/albumDescription
