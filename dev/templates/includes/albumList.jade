@@ -1,18 +1,5 @@
 nav
 	ul
-		
-		li
+		li(ng-repeat="music in musicCtrlr.music")
 			a(href="#")
-				img(src="images/albums/album-abbeyroad-small.jpg")
-		li
-			a(href="#")
-				img(src="images/albums/album-bobmarley-small.jpg")
-		li
-			a(href="#")
-				img(src="images/albums/album-magnacarta-small.jpg")
-		li
-			a(href="#")
-				img(src="images/albums/album-pinkfloyd-small.jpg")
-		li
-			a(href="#")
-				img(src="images/albums/album-yeezus-small.jpg")
+				img(ng-src="{{music.imageUrlSmall}}")

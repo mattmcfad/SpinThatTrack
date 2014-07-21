@@ -1,4 +1,3 @@
-
 (function() {
 	var app = angular.module('gallery',[]);
 		app.controller('musicController',function(){
@@ -6,6 +5,16 @@
 			this.music = music;
 		});
 
+		/*JSON Structure
+		 *id
+		 *artist
+		 *album
+		 *imageUrlLarge
+		 *imageUrlSmall
+		 *songUrl
+		 *description
+		 *isPurchased
+		 */
 		var music = [
 			{
 				'id':1,
@@ -55,5 +64,4 @@
 				'isPurchased':false	
 			}
 		];
-
 })();
