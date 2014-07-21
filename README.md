@@ -14,15 +14,19 @@ Converting an old jQuery project to AngularJS.
 ## Installation
 
 Install package.json
+	
 	sudo npm install
 
 Update dependencies
+	
 	bower update
 
 Grunt Development
+	
 	grunt
 
 Grunt Deploy
+	
 	grunt deploy
 
 ## Demo
