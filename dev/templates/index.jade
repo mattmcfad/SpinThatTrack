@@ -1,13 +1,14 @@
 doctype html
-html(lang='en')
+html(lang='en' ng-app="gallery")
 	head
 		include includes/header
 	body
 		.wrapper
-			.container.clearfix
+			.container.clearfix(ng-controller="musicController as musicCtrlr")
 				header 
 					h1 Spin That Track!
 					div.shoppingCart
+						{{musicCtrlr.music[0].artist}}
 				include includes/albumList
 				include includes/albumArt
 				include includes/albumDescription
